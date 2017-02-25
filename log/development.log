@@ -268,3 +268,459 @@ Processing by ProfsController#index as */*
 Completed 200 OK in 75ms (Views: 73.0ms | ActiveRecord: 1.5ms)
 
 
+Started GET "/profs" for 127.0.0.1 at 2017-02-05 20:38:05 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (3.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by ProfsController#index as */*
+  [1m[36mProf Load (0.8ms)[0m  [1m[34mSELECT `profs`.* FROM `profs`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (27.81ms)
+Completed 200 OK in 58ms (Views: 55.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/profs" for 127.0.0.1 at 2017-02-05 20:38:36 +0530
+Processing by ProfsController#index as */*
+  [1m[36mProf Load (0.6ms)[0m  [1m[34mSELECT `profs`.* FROM `profs`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (19.9ms)
+Completed 200 OK in 42ms (Views: 39.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/profs" for 127.0.0.1 at 2017-02-05 20:39:00 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by ProfsController#index as */*
+  [1m[36mProf Load (0.6ms)[0m  [1m[34mSELECT `profs`.* FROM `profs`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (14.31ms)
+Completed 200 OK in 46ms (Views: 42.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/profs" for 127.0.0.1 at 2017-02-05 20:56:37 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by ProfsController#index as */*
+  [1m[36mProf Load (0.7ms)[0m  [1m[34mSELECT `profs`.* FROM `profs`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (28.07ms)
+Completed 200 OK in 57ms (Views: 53.8ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/depts" for 127.0.0.1 at 2017-02-05 20:58:24 +0530
+Processing by DeptsController#create as */*
+  Parameters: {"{name:Engineering Design}"=>nil}
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: dept):
+  
+app/controllers/depts_controller.rb:49:in `dept_params'
+app/controllers/depts_controller.rb:18:in `create'
+Started POST "/dept" for 127.0.0.1 at 2017-02-05 20:59:02 +0530
+  
+ActionController::RoutingError (No route matches [POST] "/dept"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/dept" for 127.0.0.1 at 2017-02-05 20:59:13 +0530
+  
+ActionController::RoutingError (No route matches [POST] "/dept"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/dept" for 127.0.0.1 at 2017-02-06 04:43:43 +0530
+  
+ActionController::RoutingError (No route matches [POST] "/dept"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/depts" for 127.0.0.1 at 2017-02-06 04:45:39 +0530
+Processing by DeptsController#create as */*
+  Parameters: {"{name:Engineering Design}"=>nil}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: dept):
+  
+app/controllers/depts_controller.rb:49:in `dept_params'
+app/controllers/depts_controller.rb:18:in `create'
+Started GET "/depts" for 127.0.0.1 at 2017-02-06 04:49:36 +0530
+Processing by DeptsController#index as */*
+  [1m[36mDept Load (0.5ms)[0m  [1m[34mSELECT `depts`.* FROM `depts`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.09ms)
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/depts" for 127.0.0.1 at 2017-02-06 04:52:48 +0530
+Processing by DeptsController#create as */*
+  Parameters: {"name"=>"Engineering Design", "label"=>"x", "dept"=>{"name"=>"Engineering Design", "label"=>"x"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.5ms)[0m  [1m[32mINSERT INTO `depts` (`name`, `label`, `created_at`, `updated_at`) VALUES ('Engineering Design', 'x', '2017-02-05 23:22:48', '2017-02-05 23:22:48')[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Dept (0.41ms)
+Completed 201 Created in 26ms (Views: 6.5ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/depts" for 127.0.0.1 at 2017-02-06 04:53:15 +0530
+Processing by DeptsController#index as */*
+  [1m[36mDept Load (0.5ms)[0m  [1m[34mSELECT `depts`.* FROM `depts`[0m
+No serializer found for resource: #<Dept id: 1, name: "Engineering Design", label: "x", created_at: "2017-02-05 23:22:48", updated_at: "2017-02-05 23:22:48">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Dept::ActiveRecord_Relation (0.39ms)
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/depts" for 127.0.0.1 at 2017-02-06 04:53:39 +0530
+Processing by DeptsController#create as */*
+  Parameters: {"name"=>"Computer Science", "label"=>"x", "dept"=>{"name"=>"Computer Science", "label"=>"x"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `depts` (`name`, `label`, `created_at`, `updated_at`) VALUES ('Computer Science', 'x', '2017-02-05 23:23:39', '2017-02-05 23:23:39')[0m
+  [1m[35m (7.6ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Dept (0.21ms)
+Completed 201 Created in 11ms (Views: 0.8ms | ActiveRecord: 8.0ms)
+
+
+Started POST "/depts" for 127.0.0.1 at 2017-02-06 04:53:56 +0530
+Processing by DeptsController#create as */*
+  Parameters: {"name"=>"Electrical Engineering", "label"=>"x", "dept"=>{"name"=>"Electrical Engineering", "label"=>"x"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `depts` (`name`, `label`, `created_at`, `updated_at`) VALUES ('Electrical Engineering', 'x', '2017-02-05 23:23:56', '2017-02-05 23:23:56')[0m
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Dept (0.48ms)
+Completed 201 Created in 12ms (Views: 1.5ms | ActiveRecord: 6.4ms)
+
+
+Started POST "/depts" for 127.0.0.1 at 2017-02-06 04:54:09 +0530
+Processing by DeptsController#create as */*
+  Parameters: {"name"=>"Engineering Physics", "label"=>"x", "dept"=>{"name"=>"Engineering Physics", "label"=>"x"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `depts` (`name`, `label`, `created_at`, `updated_at`) VALUES ('Engineering Physics', 'x', '2017-02-05 23:24:09', '2017-02-05 23:24:09')[0m
+  [1m[35m (14.7ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Dept (0.37ms)
+Completed 201 Created in 20ms (Views: 1.1ms | ActiveRecord: 15.4ms)
+
+
+Started GET "/depts" for 127.0.0.1 at 2017-02-06 04:54:19 +0530
+Processing by DeptsController#index as */*
+  [1m[36mDept Load (0.4ms)[0m  [1m[34mSELECT `depts`.* FROM `depts`[0m
+No serializer found for resource: #<Dept id: 1, name: "Engineering Design", label: "x", created_at: "2017-02-05 23:22:48", updated_at: "2017-02-05 23:22:48">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Dept::ActiveRecord_Relation (0.87ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/depts" for 127.0.0.1 at 2017-02-06 04:55:34 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by DeptsController#index as */*
+  [1m[36mDept Load (0.3ms)[0m  [1m[34mSELECT `depts`.* FROM `depts`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.38ms)
+Completed 200 OK in 15ms (Views: 12.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/depts" for 127.0.0.1 at 2017-02-06 04:56:58 +0530
+Processing by DeptsController#index as */*
+  [1m[36mDept Load (0.4ms)[0m  [1m[34mSELECT `depts`.* FROM `depts`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.53ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.4ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('1216608694171130925', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateReviews (20170205233415)
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE `reviews` (`id` int AUTO_INCREMENT PRIMARY KEY, `rating` int, `user_id` int, `course_id` int, `grading` text, `learning` text, `apply` text, `prerequisites` text, `usefulforcareer` text, `vote_count` int, `upvote` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('1216608694171130925')[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('1216608694171130925', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateReviews (20170205233415)
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE `reviews` (`id` int AUTO_INCREMENT PRIMARY KEY, `rating` int, `user_id` int, `course_id` int, `grading` text, `learning` text, `apply` text, `prerequisites` text, `usefulforcareer` text, `vote_count` int, `upvote` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('1216608694171130925')[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('1216608694171130925', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateReviews (20170205233415)
+  [1m[35m (44.2ms)[0m  [1m[35mCREATE TABLE `reviews` (`id` int AUTO_INCREMENT PRIMARY KEY, `rating` int, `user_id` int, `course_id` int, `grading` text, `learning` text, `apply` text, `prerequisites` text, `usefulforcareer` text, `vote_count` int, `upvote` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170205233415')[0m
+  [1m[35m (10.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('1216608694171130925')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `courses`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'courses'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `depts`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'depts'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `notifications`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'notifications'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `profs`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'profs'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `reviews`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'reviews'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `search_suggestions`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'search_suggestions'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `sems`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'sems'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `users`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `votes`[0m
+Started GET "/" for 127.0.0.1 at 2017-02-25 15:36:23 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /home/haran/.rvm/gems/ruby-2.4.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/haran/.rvm/gems/ruby-2.4.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb (1.9ms)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-02-25 15:36:23 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-02-25 15:36:23 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/profs" for 127.0.0.1 at 2017-02-25 15:36:31 +0530
+Processing by ProfsController#index as HTML
+  [1m[36mProf Load (0.8ms)[0m  [1m[34mSELECT `profs`.* FROM `profs`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (30.16ms)
+Completed 200 OK in 60ms (Views: 56.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/profs" for 127.0.0.1 at 2017-02-25 15:37:11 +0530
+Processing by ProfsController#index as */*
+  [1m[36mProf Load (0.8ms)[0m  [1m[34mSELECT `profs`.* FROM `profs`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (25.85ms)
+Completed 200 OK in 42ms (Views: 41.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2017-02-25 15:39:50 +0530
+Processing by CoursesController#index as HTML
+  [1m[36mCourse Load (2.1ms)[0m  [1m[34mSELECT `courses`.* FROM `courses`[0m
+No serializer found for resource: #<Course id: 1, dept_id: 1, number: "AM1100", name: "Engineering Mechanics", prof: "Lakshmana Rao C", credits: nil, sem: nil, created_at: nil, updated_at: nil>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Course::ActiveRecord_Relation (190.63ms)
+Completed 200 OK in 235ms (Views: 227.7ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/depts" for 127.0.0.1 at 2017-02-25 15:41:24 +0530
+Processing by DeptsController#index as HTML
+  [1m[36mDept Load (0.3ms)[0m  [1m[34mSELECT `depts`.* FROM `depts`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.35ms)
+Completed 200 OK in 10ms (Views: 5.3ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/depts" for 127.0.0.1 at 2017-02-25 15:48:40 +0530
+Processing by DeptsController#create as */*
+  Parameters: {"name"=>"Bio-tech", "label"=>1, "dept"=>{"name"=>"Bio-tech", "label"=>1}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `depts` (`name`, `label`, `created_at`, `updated_at`) VALUES ('Bio-tech', '1', '2017-02-25 10:18:40', '2017-02-25 10:18:40')[0m
+  [1m[35m (12.3ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered DeptSerializer with ActiveModelSerializers::Adapter::Attributes (0.14ms)
+Completed 201 Created in 16ms (Views: 1.0ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/depts" for 127.0.0.1 at 2017-02-25 15:48:51 +0530
+Processing by DeptsController#index as HTML
+  [1m[36mDept Load (0.5ms)[0m  [1m[34mSELECT `depts`.* FROM `depts`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.83ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2017-02-25 16:15:59 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CoursesController#index as HTML
+  [1m[36mCourse Load (1.9ms)[0m  [1m[34mSELECT `courses`.* FROM `courses`[0m
+No serializer found for resource: #<Course id: 1, dept_id: 1, number: "AM1100", name: "Engineering Mechanics", prof: "Lakshmana Rao C", credits: nil, sem: nil, created_at: nil, updated_at: nil>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Course::ActiveRecord_Relation (173.44ms)
+Completed 200 OK in 212ms (Views: 207.8ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/courses?dept_id=1" for 127.0.0.1 at 2017-02-25 16:16:27 +0530
+Processing by CoursesController#index as HTML
+  Parameters: {"dept_id"=>"1"}
+  [1m[36mCourse Load (1.3ms)[0m  [1m[34mSELECT `courses`.* FROM `courses` WHERE `courses`.`dept_id` = 1[0m
+No serializer found for resource: #<Course id: 1, dept_id: 1, number: "AM1100", name: "Engineering Mechanics", prof: "Lakshmana Rao C", credits: nil, sem: nil, created_at: nil, updated_at: nil>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Course::ActiveRecord_Relation (7.29ms)
+Completed 200 OK in 12ms (Views: 9.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/courses?dept_id=1" for 127.0.0.1 at 2017-02-25 16:16:36 +0530
+Processing by CoursesController#index as HTML
+  Parameters: {"dept_id"=>"1"}
+  [1m[36mCourse Load (2.2ms)[0m  [1m[34mSELECT `courses`.* FROM `courses` WHERE `courses`.`dept_id` = 1[0m
+No serializer found for resource: #<Course id: 1, dept_id: 1, number: "AM1100", name: "Engineering Mechanics", prof: "Lakshmana Rao C", credits: nil, sem: nil, created_at: nil, updated_at: nil>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Course::ActiveRecord_Relation (12.61ms)
+Completed 200 OK in 19ms (Views: 16.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/courses?dept_id=2" for 127.0.0.1 at 2017-02-25 16:16:48 +0530
+Processing by CoursesController#index as HTML
+  Parameters: {"dept_id"=>"2"}
+  [1m[36mCourse Load (1.0ms)[0m  [1m[34mSELECT `courses`.* FROM `courses` WHERE `courses`.`dept_id` = 2[0m
+No serializer found for resource: #<Course id: 92, dept_id: 2, number: "AS1020", name: "Fluid Mechanics", prof: "Luoyi Tao", credits: nil, sem: nil, created_at: nil, updated_at: nil>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Course::ActiveRecord_Relation (6.56ms)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/courses?dept_id=2" for 127.0.0.1 at 2017-02-25 16:18:02 +0530
+Started GET "/courses?dept_id=1" for 127.0.0.1 at 2017-02-25 16:18:12 +0530
+Processing by CoursesController#index as HTML
+  Parameters: {"dept_id"=>"2"}
+  [1m[36mCourse Load (1.0ms)[0m  [1m[34mSELECT `courses`.* FROM `courses` WHERE `courses`.`dept_id` = 2[0m
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `prof' for #<CoursesController:0x00000001acdbd0>
+Did you mean?  proc):
+  
+app/controllers/courses_controller.rb:8:in `index'
+Processing by CoursesController#index as HTML
+  Parameters: {"dept_id"=>"1"}
+  [1m[36mCourse Load (1.1ms)[0m  [1m[34mSELECT `courses`.* FROM `courses` WHERE `courses`.`dept_id` = 1[0m
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `prof' for #<CoursesController:0x007fa588e32940>
+Did you mean?  proc):
+  
+app/controllers/courses_controller.rb:8:in `index'
+Started GET "/courses?dept_id=1" for 127.0.0.1 at 2017-02-25 16:18:33 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CoursesController#index as HTML
+  Parameters: {"dept_id"=>"1"}
+  [1m[36mCourse Load (1.2ms)[0m  [1m[34mSELECT `courses`.* FROM `courses` WHERE `courses`.`dept_id` = 1[0m
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 0.4ms)
+
+
+  
+NameError (undefined local variable or method `prof' for #<CoursesController:0x007f71509a1690>
+Did you mean?  proc):
+  
+app/controllers/courses_controller.rb:8:in `index'
+Started GET "/courses?dept_id=1" for 127.0.0.1 at 2017-02-25 16:19:08 +0530
+Started GET "/courses?dept_id=1" for 127.0.0.1 at 2017-02-25 16:19:16 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CoursesController#index as HTML
+  Parameters: {"dept_id"=>"1"}
+  [1m[36mCourse Load (1.0ms)[0m  [1m[34mSELECT `courses`.* FROM `courses` WHERE `courses`.`dept_id` = 1[0m
+No serializer found for resource: #<Course id: 1, dept_id: 1, number: "AM1100", name: "Engineering Mechanics", prof: "Lakshmana Rao C", credits: nil, sem: nil, created_at: nil, updated_at: nil>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Course::ActiveRecord_Relation (11.3ms)
+Completed 200 OK in 26ms (Views: 21.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/courses?dept_id=1&prof=Ramakrishnan\%20S" for 127.0.0.1 at 2017-02-25 16:20:58 +0530
+Processing by CoursesController#index as HTML
+  Parameters: {"dept_id"=>"1", "prof"=>"Ramakrishnan\\ S"}
+  [1m[36mCourse Load (3.1ms)[0m  [1m[34mSELECT `courses`.* FROM `courses` WHERE `courses`.`dept_id` = 1 AND `courses`.`prof` = 'Ramakrishnan\\ S'[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.16ms)
+Completed 200 OK in 10ms (Views: 5.7ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/courses?prof=Ramakrishnan\%20S" for 127.0.0.1 at 2017-02-25 16:21:07 +0530
+Processing by CoursesController#index as HTML
+  Parameters: {"prof"=>"Ramakrishnan\\ S"}
+  [1m[36mCourse Load (1.5ms)[0m  [1m[34mSELECT `courses`.* FROM `courses` WHERE `courses`.`prof` = 'Ramakrishnan\\ S'[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.06ms)
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/courses?prof=Ramakrishnan%20S" for 127.0.0.1 at 2017-02-25 16:21:38 +0530
+Processing by CoursesController#index as HTML
+  Parameters: {"prof"=>"Ramakrishnan S"}
+  [1m[36mCourse Load (1.0ms)[0m  [1m[34mSELECT `courses`.* FROM `courses` WHERE `courses`.`prof` = 'Ramakrishnan S'[0m
+No serializer found for resource: #<Course id: 9, dept_id: 1, number: "AM1100", name: "Engineering Mechanics", prof: "Ramakrishnan S", credits: nil, sem: nil, created_at: nil, updated_at: nil>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Course::ActiveRecord_Relation (0.4ms)
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 1.0ms)
+
+

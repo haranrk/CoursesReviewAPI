@@ -1,3 +1,3 @@
 class ProfSerializer < ActiveModel::Serializer
-  attributes :id, :name, :dept
+  attributes  :id, :name, :dept
 end

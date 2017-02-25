@@ -3,7 +3,9 @@ class CoursesController < ApplicationController
 
   # GET /courses
   def index
-    @courses = Course.all
+    @courses = Course.where(nil)
+    @courses = @courses.dep(params[:dept_id]) if params[:dept_id].present?
+    @courses = @courses.profscope(params[:prof]) if params[:prof].present?
 
     render json: @courses
   end
