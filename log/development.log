@@ -808,3 +808,58 @@ No serializer found for resource: #<Course id: 1, dept_id: 1, number: "AM1100", 
 Completed 200 OK in 29ms (Views: 23.1ms | ActiveRecord: 2.4ms)
 
 
+Started GET "/courses?dept_id=1" for 127.0.0.1 at 2017-03-06 18:57:13 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CoursesController#index as HTML
+  Parameters: {"dept_id"=>"1"}
+  [1m[36mCourse Load (1.0ms)[0m  [1m[34mSELECT `courses`.* FROM `courses` WHERE `courses`.`dept_id` = 1[0m
+No serializer found for resource: #<Course id: 1, dept_id: 1, number: "AM1100", name: "Engineering Mechanics", prof: "Lakshmana Rao C", credits: nil, sem: nil, created_at: nil, updated_at: nil>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Course::ActiveRecord_Relation (11.81ms)
+Completed 200 OK in 28ms (Views: 22.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/courses?dept_id=1" for 127.0.0.1 at 2017-03-06 18:57:15 +0530
+Processing by CoursesController#index as HTML
+  Parameters: {"dept_id"=>"1"}
+  [1m[36mCourse Load (1.9ms)[0m  [1m[34mSELECT `courses`.* FROM `courses` WHERE `courses`.`dept_id` = 1[0m
+No serializer found for resource: #<Course id: 1, dept_id: 1, number: "AM1100", name: "Engineering Mechanics", prof: "Lakshmana Rao C", credits: nil, sem: nil, created_at: nil, updated_at: nil>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Course::ActiveRecord_Relation (8.27ms)
+Completed 200 OK in 14ms (Views: 11.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/courses?dept_id=2" for 127.0.0.1 at 2017-03-06 18:57:18 +0530
+Processing by CoursesController#index as HTML
+  Parameters: {"dept_id"=>"2"}
+  [1m[36mCourse Load (1.1ms)[0m  [1m[34mSELECT `courses`.* FROM `courses` WHERE `courses`.`dept_id` = 2[0m
+No serializer found for resource: #<Course id: 92, dept_id: 2, number: "AS1020", name: "Fluid Mechanics", prof: "Luoyi Tao", credits: nil, sem: nil, created_at: nil, updated_at: nil>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Course::ActiveRecord_Relation (6.92ms)
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/courses?dept_id=1" for 127.0.0.1 at 2017-03-06 18:57:25 +0530
+Processing by CoursesController#index as HTML
+  Parameters: {"dept_id"=>"1"}
+  [1m[36mCourse Load (1.0ms)[0m  [1m[34mSELECT `courses`.* FROM `courses` WHERE `courses`.`dept_id` = 1[0m
+No serializer found for resource: #<Course id: 1, dept_id: 1, number: "AM1100", name: "Engineering Mechanics", prof: "Lakshmana Rao C", credits: nil, sem: nil, created_at: nil, updated_at: nil>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Course::ActiveRecord_Relation (6.67ms)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/courses?search=Strength" for 127.0.0.1 at 2017-03-06 18:57:56 +0530
+Processing by CoursesController#index as HTML
+  Parameters: {"search"=>"Strength"}
+  [1m[36mCourse Load (2.0ms)[0m  [1m[34mSELECT `courses`.* FROM `courses` WHERE (name LIKE '%Strength%' OR prof LIKE '%Strength%')[0m
+No serializer found for resource: #<Course id: 11, dept_id: 1, number: "AM2200", name: "Strength of Materials", prof: "Arockiarajan A", credits: nil, sem: nil, created_at: nil, updated_at: nil>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Course::ActiveRecord_Relation (0.46ms)
+Completed 200 OK in 5ms (Views: 1.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/courses?search=Aroc" for 127.0.0.1 at 2017-03-06 18:58:26 +0530
+Processing by CoursesController#index as HTML
+  Parameters: {"search"=>"Aroc"}
+  [1m[36mCourse Load (2.5ms)[0m  [1m[34mSELECT `courses`.* FROM `courses` WHERE (name LIKE '%Aroc%' OR prof LIKE '%Aroc%')[0m
+No serializer found for resource: #<Course id: 11, dept_id: 1, number: "AM2200", name: "Strength of Materials", prof: "Arockiarajan A", credits: nil, sem: nil, created_at: nil, updated_at: nil>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Course::ActiveRecord_Relation (0.63ms)
+Completed 200 OK in 5ms (Views: 1.7ms | ActiveRecord: 2.5ms)
+
+

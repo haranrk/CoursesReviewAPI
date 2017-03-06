@@ -6,7 +6,7 @@ class CoursesController < ApplicationController
     @courses = Course.where(nil)
     @courses = @courses.dep(params[:dept_id]) if params[:dept_id].present?
     @courses = @courses.profscope(params[:prof]) if params[:prof].present?
-
+    @courses = @courses.search(params[:search]) if params[:search].present?
     render json: @courses
   end
 
